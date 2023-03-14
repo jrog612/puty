@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "puty"
-version = "0.0.1.dev1"
+version = "0.0.1"
 description = "data purifier with schema"
 authors = ["jrog612 <jrog612@gmail.com>"]
 license = "MIT"
