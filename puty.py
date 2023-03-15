@@ -1,4 +1,4 @@
-import collections
+from collections.abc import Iterable
 
 DEFAULT_ACTIONS = ['required', 'default', 'convert', 'type', 'valid', 'rename', ]
 NONE_VALUES = [None, '', [], (), {}]
@@ -126,7 +126,7 @@ class Puty:
 
         if value_type is standard:
             return value
-        if isinstance(standard, collections.Iterable) and value_type in standard:
+        if isinstance(standard, Iterable) and value_type in standard:
             return value
         raise PutyActionException(
             key, value, action='type', param=param,
